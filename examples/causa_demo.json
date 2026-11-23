@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "case": {
+    "rol": "DEMO-001-2026",
+    "court": "Tribunal de ejemplo (ficticio)",
+    "caption": "Persona A / Persona B (datos ficticios)",
+    "procedure": "Sumario (ejemplo educativo)",
+    "stage": "Sentencia",
+    "status": "En tramitación (simulado)",
+    "filed_at": "2026-01-05",
+    "cutoff_date": "2026-05-15",
+    "summary": "Ejemplo ficticio: el historial registra una citación para oír sentencia. No se ha incorporado un fallo definitivo en este conjunto de datos.",
+    "scope": "Datos íntegramente ficticios. No representan una causa judicial real. En un uso real, indicar qué cuadernos, resoluciones y escritos se revisaron y cuáles quedan pendientes.",
+    "review_status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": ""
+  },
+  "events": [
+    {"date": "2026-01-05", "stage": "Inicio", "title": "Ingreso de demanda", "description": "Se registra el ingreso de la demanda en el expediente ficticio.", "folio": "1 (simulado)", "source_id": "demo"},
+    {"date": "2026-02-02", "stage": "Discusión", "title": "Contestación y audiencia", "description": "Hito simulado de contestación y audiencia. En una causa real deben consignarse las fechas exactas de cada actuación.", "folio": "5 (simulado)", "source_id": "demo"},
+    {"date": "2026-02-16", "stage": "Prueba", "title": "Recepción de la causa a prueba", "description": "El expediente ficticio pasa a la etapa de prueba.", "folio": "8 (simulado)", "source_id": "demo"},
+    {"date": "2026-05-04", "stage": "Sentencia", "title": "Citación para oír sentencia", "description": "Último hito simulado: citación para oír sentencia. No equivale a una sentencia dictada.", "folio": "20 (simulado)", "source_id": "demo"}
+  ],
+  "next_steps": [
+    {"action": "Revisar el expediente completo", "owner": "Abogado responsable", "when": "Antes de entregar el informe", "reason": "Leer la citación, los últimos decretos, los cuadernos y los escritos por resolver; confirmar la etapa y las eventuales incidencias."},
+    {"action": "Evaluar una solicitud de dictación de sentencia", "owner": "Abogado responsable", "when": "Después de validar el estado de la causa", "reason": "Si el expediente está en estado de fallo y corresponde, evaluar una solicitud de dictación de sentencia o pronto despacho. Este informe no presenta escritos."},
+    {"action": "Programar el siguiente control", "owner": "Equipo del estudio", "when": "Semanal, como pauta interna propuesta", "reason": "Revisar novedades y avisar al cliente. Al dictarse sentencia, verificar su notificación y los plazos de recursos aplicables."}
+  ],
+  "timing": {
+    "waiting_since": "2026-05-04",
+    "legal_reference": "Referencia general del ejemplo: el artículo 688 CPC contempla diez días desde la resolución de citación para dictar sentencia en el procedimiento sumario. El abogado debe verificar su aplicación y el cómputo. Los plazos para actuaciones propias del tribunal no son fatales (art. 64 CPC).",
+    "source_id": "cpc",
+    "remaining_time": "No hay fecha confirmada. Este ejemplo no dispone de datos para estimar el tiempo restante y no transforma el plazo legal en una promesa de fallo.",
+    "follow_up": "Pauta propuesta: revisión semanal. Es un control interno, no un plazo del tribunal."
+  },
+  "sources": [
+    {"id": "demo", "title": "Conjunto de datos ficticio. Portal OJV como referencia de consulta, no como prueba de estos hitos", "url": "https://oficinajudicialvirtual.pjud.cl/", "consulted_at": "2026-05-15"},
+    {"id": "cpc", "title": "BCN - Código de Procedimiento Civil, arts. 64 y 688. Fecha ilustrativa: actualizar al consultar", "url": "https://www.bcn.cl/leychile/navegar?idNorma=22740", "consulted_at": "2026-05-15"}
+  ]
+}
