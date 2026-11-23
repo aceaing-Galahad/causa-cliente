@@ -1,4 +1,6 @@
-# Causa Cliente
+# Estado de Proceso Jurídico
+
+**Causa Cliente** es el generador de informes de este proyecto.
 
 Convierte una revisión de expediente judicial en un informe para el cliente: línea de tiempo por etapas, situación actual, siguientes gestiones, tiempo observado y fuentes.
 
